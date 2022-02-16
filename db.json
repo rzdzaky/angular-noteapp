@@ -10,19 +10,13 @@
       "id": 2,
       "text": "Makan siang",
       "times": "02.00pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 3,
       "text": "Makan malam",
       "times": "07.00pm",
       "reminder": false
-    },
-    {
-      "id": 4,
-      "text": "Makan tengah malam",
-      "times": "11.00pm",
-      "reminder": true
     }
   ]
 }
