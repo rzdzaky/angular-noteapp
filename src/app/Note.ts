@@ -1,6 +1,6 @@
 export interface Note {
   id?: number;
   text: string;
-  day: string;
+  times: string;
   reminder: boolean;
 }

@@ -1,4 +1,7 @@
+<app-add-note (onAddNote)="addNote($event)"></app-add-note>
 <app-note-item 
   *ngFor="let note of notes" 
-  [note]="note">
+  [note]="note"
+  (onDeleteNote)="deleteNote(note)"
+  (onToggleReminder)="toggleReminder(note)">
 </app-note-item>

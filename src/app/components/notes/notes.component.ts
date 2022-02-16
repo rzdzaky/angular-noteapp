@@ -16,4 +16,17 @@ export class NotesComponent implements OnInit {
     this.noteService.getNotes().subscribe(notes => this.notes = notes);
   }
 
+  deleteNote(note: Note) {
+    this.noteService.deleteNote(note).subscribe(() => this.notes = this.notes.filter(n => n.id !== note.id));
+  }
+
+  toggleReminder(note: Note) {
+    note.reminder = !note.reminder
+    this.noteService.updateNoteReminder(note).subscribe()
+  }
+
+  addNote(note:Note){
+    this.noteService.addNote(note).subscribe(notes => this.notes.push(note));
+  }
+
 }

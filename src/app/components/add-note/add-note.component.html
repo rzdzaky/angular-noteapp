@@ -1,0 +1,35 @@
+<form 
+  *ngIf="showAddNote"
+  class="add-form" 
+  (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">Note</label>
+    <input 
+      type="text" 
+      name="text" 
+      [(ngModel)]="text" 
+      id="text" 
+      placeholder="Add Note">
+  </div>
+  <div class="form-control">
+    <label for="times">Times</label>
+    <input 
+      type="text" 
+      name="times" 
+      [(ngModel)]="times" 
+      id="times" 
+      placeholder="Add Times">
+  </div>
+  <div class="form-control form-control-check">
+    <label for="reminder">Reminder</label>
+    <input 
+      type="checkbox" 
+      name="reminder" 
+      [(ngModel)]="reminder" 
+      id="reminder">
+  </div>
+  <input 
+    type="submit" 
+    value="Save Note" 
+    class="btn btn-block">
+</form>
